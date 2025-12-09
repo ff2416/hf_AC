@@ -15,7 +15,7 @@ https://huggingface.co/FF2416/AC-Foley/blob/main/model.pth
 
 ## Inference
 ```bash
-python inf.sh \
+python inf.py \
   --model_path <model path> \
   --duration 8 \
   --prompt <prompt> \
