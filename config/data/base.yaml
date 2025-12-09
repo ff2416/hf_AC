@@ -1,0 +1,69 @@
+VGGSound:
+  root: /project/llmsvgen/share/data_vggsound/dataset/scratch/shared/beegfs/hchen/train_data/VGGSound_final/video
+  subset_name: /project/llmsvgen/pengjun/MMAudio_dev/tsv/vgg-train.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+VGGSound_test:
+  root: /project/llmsvgen/share/data_vggsound/dataset/scratch/shared/beegfs/hchen/train_data/VGGSound_final/video
+  subset_name: /project/llmsvgen/pengjun/MMAudio_dev/tsv/vgg-test.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+VGGSound_val:
+  root: /project/llmsvgen/share/data_vggsound/dataset/scratch/shared/beegfs/hchen/train_data/VGGSound_final/video
+  subset_name: /project/llmsvgen/pengjun/MMAudio_dev/tsv/vgg-val.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+ExtractedVGG:
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-train.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-train
+
+ExtractedVGG_test:
+  tag: test
+  gt_cache: ../data/eval-cache/vggsound-test
+  output_subdir: null
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-test.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-test
+
+ExtractedVGG_val:
+  tag: val
+  gt_cache: /project/llmsvgen/pengjun/MMAudio_dev/training/val_cache
+  output_subdir: val
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-val.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/vgg-clap/memmap/vgg-val
+
+AudioCaps:
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/audiocaps_clap/memmap/audiocaps_clap.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/audiocaps_clap/memmap/audiocaps_clap
+
+AudioSetSL:
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/audioset_clap/memmap/audioset_clap.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/audioset_clap/memmap/audioset_clap
+# BBCSound:
+#   tsv: ../data/v1-16-memmap/bbcsound.tsv
+#   memmap_dir: ../data/v1-16-memmap/bbcsound
+
+FreeSound:
+  tsv: /project/llmsvgen/pengjun/MMAudio_dev/training/freesound_clap/memmap/freesound_clap.tsv
+  memmap_dir: /project/llmsvgen/pengjun/MMAudio_dev/training/freesound_clap/memmap/freesound_clap
+
+# Clotho:
+#   tsv: ../data/v1-16-memmap/clotho.tsv
+#   memmap_dir: ../data/v1-16-memmap/clotho
+
+# Example_video:
+#   tsv: ./training/example_output/memmap/vgg-example.tsv
+#   memmap_dir: ./training/example_output/memmap/vgg-example
+
+# Example_audio:
+#   tsv: ./training/example_output/memmap/audio-example.tsv
+#   memmap_dir: ./training/example_output/memmap/audio-example
+  
